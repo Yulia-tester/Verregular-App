@@ -9,7 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="73" id="0pX-Pb-5Ep">
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="VerbTableViewCell" rowHeight="73" id="0pX-Pb-5Ep" customClass="VerbTableViewCell" customModule="Verregular_App" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="393" height="73"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0pX-Pb-5Ep" id="Fu1-5v-6i3">
@@ -49,7 +49,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zEl-qj-uac">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zEl-qj-uac" customClass="Ver">
                                 <rect key="frame" x="262" y="26.333333333333336" width="131" height="20.333333333333336"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -65,6 +65,12 @@
                     <constraint firstItem="m15-nG-WRJ" firstAttribute="leading" secondItem="Fu1-5v-6i3" secondAttribute="leading" id="f1m-Zi-GNA"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="infinitiveLabel" destination="HFz-JJ-DfM" id="7Wm-6M-OaR"/>
+                <outlet property="participleLabel" destination="zEl-qj-uac" id="MPb-Rc-bgD"/>
+                <outlet property="pastSimpleLabel" destination="Dxc-Lk-EID" id="kDd-Vs-hwu"/>
+                <outlet property="translationLabel" destination="3Jl-Z5-6Uy" id="egv-Yh-kbZ"/>
+            </connections>
             <point key="canvasLocation" x="730.53435114503816" y="-165.84507042253523"/>
         </tableViewCell>
     </objects>
