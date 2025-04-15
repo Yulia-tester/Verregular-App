@@ -17,6 +17,7 @@
 		B275B2892DAAC8020023F1F4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B275B28B2DAAC8020023F1F4 /* Localizable.strings */; };
 		B275B28E2DAAC8B10023F1F4 /* IrregularVerbs.swift in Sources */ = {isa = PBXBuildFile; fileRef = B275B28D2DAAC8B10023F1F4 /* IrregularVerbs.swift */; };
 		B275B2902DAAD00B0023F1F4 /* VerbTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B275B28F2DAAD00B0023F1F4 /* VerbTableViewCell.xib */; };
+		B275B2922DAD5AE20023F1F4 /* VerbTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B275B2912DAD5AE20023F1F4 /* VerbTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		B275B28C2DAAC82E0023F1F4 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B275B28D2DAAC8B10023F1F4 /* IrregularVerbs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IrregularVerbs.swift; sourceTree = "<group>"; };
 		B275B28F2DAAD00B0023F1F4 /* VerbTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VerbTableViewCell.xib; sourceTree = "<group>"; };
+		B275B2912DAD5AE20023F1F4 /* VerbTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerbTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,17 +69,42 @@
 			children = (
 				B275B2712DA985E10023F1F4 /* AppDelegate.swift */,
 				B275B2732DA985E10023F1F4 /* SceneDelegate.swift */,
-				B275B2752DA985E10023F1F4 /* ViewController.swift */,
-				B275B2852DAAC74D0023F1F4 /* Verb.swift */,
-				B275B28D2DAAC8B10023F1F4 /* IrregularVerbs.swift */,
+				B275B2932DAD5D8A0023F1F4 /* Model */,
+				B275B2942DAD5DA90023F1F4 /* View */,
+				B275B2952DAD5DBE0023F1F4 /* Controller */,
 				B275B28B2DAAC8020023F1F4 /* Localizable.strings */,
-				B275B2772DA985E10023F1F4 /* Main.storyboard */,
-				B275B28F2DAAD00B0023F1F4 /* VerbTableViewCell.xib */,
 				B275B27A2DA985E30023F1F4 /* Assets.xcassets */,
 				B275B27C2DA985E30023F1F4 /* LaunchScreen.storyboard */,
 				B275B27F2DA985E30023F1F4 /* Info.plist */,
 			);
 			path = "Verregular App";
+			sourceTree = "<group>";
+		};
+		B275B2932DAD5D8A0023F1F4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B275B2852DAAC74D0023F1F4 /* Verb.swift */,
+				B275B28D2DAAC8B10023F1F4 /* IrregularVerbs.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B275B2942DAD5DA90023F1F4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B275B2912DAD5AE20023F1F4 /* VerbTableViewCell.swift */,
+				B275B2772DA985E10023F1F4 /* Main.storyboard */,
+				B275B28F2DAAD00B0023F1F4 /* VerbTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B275B2952DAD5DBE0023F1F4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B275B2752DA985E10023F1F4 /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,6 +185,7 @@
 				B275B28E2DAAC8B10023F1F4 /* IrregularVerbs.swift in Sources */,
 				B275B2762DA985E10023F1F4 /* ViewController.swift in Sources */,
 				B275B2722DA985E10023F1F4 /* AppDelegate.swift in Sources */,
+				B275B2922DAD5AE20023F1F4 /* VerbTableViewCell.swift in Sources */,
 				B275B2742DA985E10023F1F4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
