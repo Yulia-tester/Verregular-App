@@ -39,7 +39,18 @@ extension ViewController: UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "VerbTableViewCell",
                                                        for: indexPath) as? VerbTableViewCell else {
             return UITableViewCell() }
+        
+        cell.configure(for: dataSource.verbs[indexPath.row])
+        
         return cell
+    }
+}
+
+// MARK: - UITableViewDelegate
+extension ViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView,
+                   heightForRowAt indexPath: IndexPath) -> CGFloat {
+        69
     }
 }
 
