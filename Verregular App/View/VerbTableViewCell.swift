@@ -16,13 +16,11 @@ final class VerbTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        print("awakeFromNib")
     }
     
     override func prepareForReuse() {
         super.prepareForReuse()
         
-        print("prepareForReuse")
         infinitiveLabel.text = ""
     }
     
